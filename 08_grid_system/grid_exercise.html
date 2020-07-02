@@ -17,47 +17,61 @@
   <h1 class="text-center display-3">Grid Exercise</h1>
   <h4 class="text-center">Part 1</h4>
   <div class="container">
-    <div class="text-white bg-danger">Share space in row evenly</div>
-    <div class="text-white bg-warning">Share space in row evenly</div>
-    <div class="text-white bg-success">Share space in row evenly</div>
+    <div class="row">
+      <div class="col text-white bg-danger">Share space in row evenly</div>
+      <div class="col text-white bg-warning">Share space in row evenly</div>
+      <div class="col text-white bg-success">Share space in row evenly</div>
+    </div>
   </div>
 
   <h4 class="text-center">Part 2</h4>
   <div class="container">
-    <div class="text-white bg-info">100% on xs, 50% on small and above</div>
-    <div class="text-white bg-warning">100% on xs, 50% on small and above</div>
+    <div class="row">
+      <div class="col-sm text-white bg-info">100% on xs, 50% on small and above</div>
+      <div class="col-sm text-white bg-warning">100% on xs, 50% on small and above</div>
+    </div>
   </div>
 
   <h4 class="text-center">Part 3</h4>
   <div class="container">
-    <div class="text-white bg-success">50% on xs, 25% on medium and above</div>
-    <div class="text-white bg-primary">50% on xs, 75% on medium and above</div>
+    <div class="row">
+      <div class="col-sm col-md-3 text-white bg-success">50% on xs, 25% on medium and above</div>
+      <div class="col-sm col-md-9 text-white bg-primary">50% on xs, 75% on medium and above</div>
+    </div>
   </div>
 
   <h4 class="text-center">Part 4</h4>
   <div class="container">
-    <div class="text-white bg-danger">I ALWAYS GO ALL THE WAY ACROSS</div>
-    <div class="text-white bg-info">2/12 on md and above</div>
-    <div class="text-white bg-success">8/12 on md and above</div>
-    <div class="text-white bg-info">2/12 on md and above</div>
-    <div class="text-white bg-danger">I ALWAYS GO ALL THE WAY ACROSS</div>
+    <div class="row">
+      <div class="col-12 text-white bg-danger">I ALWAYS GO ALL THE WAY ACROSS</div>
+      <div class="col-md-2 text-white bg-info">2/12 on md and above</div>
+      <div class="col-md-8 text-white bg-success">8/12 on md and above</div>
+      <div class="col-md-2 text-white bg-info">2/12 on md and above</div>
+      <div class="col-12 text-white bg-danger">I ALWAYS GO ALL THE WAY ACROSS</div>
+    </div>
   </div>
 
   <h4 class="text-center">Part 5</h4>
   <div class="container">
-    <div class="bg-warning">Always 50% of row, offset by 50%</div>
+    <div class="row">
+      <div class="col-6 offset-6 bg-warning">Always 50% of row, offset by 50%</div>
+    </div>
   </div>
 
   <h4 class="text-center">Part 6</h4>
   <div class="container">
-    <div class="bg-primary">100% on xs. md and above: 25%</div>
-    <div class="bg-info">100% on xs. md and above: 25% and offset by 50% </div>
+    <div class="row">
+      <div class="col-12 col-md-3 bg-primary">100% on xs. md and above: 25%</div>
+      <div class="col-12 col-md-3 offset-md-6 bg-info">100% on xs. md and above: 25% and offset by 50% </div>
+    </div>
   </div>
 
   <h4 class="text-center">Part 7</h4>
   <div class="container">
-    <div class="bg-danger">100% on xs. Md and above: 75%</div>
-    <div class="bg-success">Hidden on xs and sm. 25% on md and above</div>
+    <div class="row">
+      <div class="col-12 col-md-9 bg-danger">100% on xs. Md and above: 75%</div>
+      <div class="d-none d-md-block col-md-3 bg-success">Hidden on xs and sm. 25% on md and above</div>
+    </div>
   </div>
 
   <!-- Optional JavaScript -->

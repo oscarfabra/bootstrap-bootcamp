@@ -48,6 +48,12 @@ body {
   }
 }
 
+#quotes {
+  i {
+    opacity: 0.3;
+  }
+}
+
 // Adjusts the collapsed navbar
 @media(max-width: 768px) {
   .navbar {

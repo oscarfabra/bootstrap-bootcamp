@@ -7801,8 +7801,7 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 body {
-  font-family: "Raleway", sans-serif;
-  background: purple; }
+  font-family: "Raleway", sans-serif; }
 
 .navbar {
   font-weight: 100;

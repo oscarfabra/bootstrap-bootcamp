@@ -7840,7 +7840,10 @@ body {
     border-radius: 2rem; }
 
 #quotes i {
-  opacity: 0.3; }
+  opacity: 0.4; }
+
+#quote i {
+  opacity: 0.4; }
 
 @media (max-width: 768px) {
   .navbar {

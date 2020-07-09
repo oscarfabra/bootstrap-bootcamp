@@ -60,6 +60,10 @@ body {
   }
 }
 
+#footer {
+  font-weight: 100;
+}
+
 // Adjusts the collapsed navbar
 @media(max-width: 768px) {
   .navbar {

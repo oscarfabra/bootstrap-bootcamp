@@ -23,19 +23,19 @@
     <div class="collapse navbar-collapse" id="mainNavbar">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a href="#" class="nav-link">Home</a>
+          <a href="#showcase" class="nav-link">Home</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">About</a>
+          <a href="#about" class="nav-link">About</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Explore</a>
+          <a href="#explore" class="nav-link">Explore</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Contact</a>
+          <a href="#contact" class="nav-link">Contact</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Book</a>
+          <a href="#" class="nav-link" data-toggle="modal" data-target="#bookingModal">Book</a>
         </li>
       </ul>
     </div>
@@ -47,7 +47,7 @@
       <h3 class="display-5 mb-0">MODERN CAMPING</h3>
       <h1 class="display-1">AURORA GROVE</h1>
       <p class="lead d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, tempora!</p>
-      <button id="book-now" class="btn btn-lg btn-primary px-5">BOOK NOW</button>
+      <button id="book-now" class="btn btn-lg btn-primary px-5" data-toggle="modal" data-target="#bookingModal">BOOK NOW</button>
     </div>
   </section>
   <!-- About section -->
@@ -110,21 +110,21 @@
           <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
           <blockquote class="blockquote">
             <p class="mb-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, ratione.</p>
-            <footer class="blockquote-footer">Mark Twain</footer>
+            <footer class="blockquote-footer">Mark Zuckerberg</footer>
           </blockquote>
         </div>
         <div class="col-md-4 my-2">
           <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
           <blockquote class="blockquote">
             <p class="mb-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, ratione.</p>
-            <footer class="blockquote-footer">Mark Twain</footer>
+            <footer class="blockquote-footer">Jeff Bezos</footer>
           </blockquote>
         </div>
         <div class="col-md-4 my-2">
           <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
           <blockquote class="blockquote">
             <p class="mb-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, ratione.</p>
-            <footer class="blockquote-footer">Mark Twain</footer>
+            <footer class="blockquote-footer">Warren Buffett</footer>
           </blockquote>
         </div>
       </div>
@@ -207,7 +207,7 @@
       <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
       <blockquote class="blockquote">
         <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nisi corporis eveniet modi exercitationem ex, numquam itaque velit dolor cumque id suscipit cupiditate provident error molestiae sapiente quam ducimus, quas natus reprehenderit? Voluptate, voluptatum nostrum?</p>
-        <footer class="blockquote-footer">Mark Twain</footer>
+        <footer class="blockquote-footer">Bill Gates</footer>
       </blockquote>
     </div>
   </section>
@@ -233,22 +233,71 @@
   <section id="footer" class="bg-secondary p-3">
     <ul class="nav text-center justify-content-center flex-column flex-sm-row">
       <li class="nav-item">
-        <a href="" class="nav-link text-white">FAQ</a>
+        <a href="#" class="nav-link text-white">FAQ</a>
       </li>
       <li class="nav-item">
-        <a href="" class="nav-link text-white">EXPERIENCE</a>
+        <a href="#explore" class="nav-link text-white">EXPERIENCE</a>
       </li>
       <li class="nav-item">
-        <a href="" class="nav-link text-white">EXPLORE</a>
+        <a href="#explore" class="nav-link text-white">EXPLORE</a>
       </li>
       <li class="nav-item">
-        <a href="" class="nav-link text-white">CONTACT</a>
+        <a href="#contact" class="nav-link text-white">CONTACT</a>
       </li>
       <li class="nav-item">
-        <a href="" class="nav-link text-white">BOOK NOW</a>
+        <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#bookingModal">BOOK NOW</a>
       </li>
     </ul>
   </section>
+  <!-- Booking modal -->
+  <div id="bookingModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">New Booking</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Please fill out the form below and we'll get back to you as soon as possible.</p>
+          <form action="">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+              <label for="adults">Number of Adults</label>
+              <select class="form-control" id="adults">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="children">Number of Children</label>
+              <select class="form-control" id="children">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="requests">Additional Requests</label>
+              <textarea id="requests" rows="3" class="form-control"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary">Submit Request</button>
+          <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Required JavaScript libraries -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="bootstrap/dist/js/bootstrap.min.js"></script>
